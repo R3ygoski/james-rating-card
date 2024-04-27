@@ -55,7 +55,7 @@ p{
     transform: scale(1.05);
 }
 
-.star-rating{
+.star-rating{ /* Changed */
     display: flex;
     text-align: center;
     justify-content: center;
@@ -63,12 +63,19 @@ p{
     gap: 24px;
 }
 
-.star-rating-btn {  /* Added */
+.star-rating-btn {  /* Added */ 
+    /* Here I removed the padding and changed it to width and height, because the first btn was small */
     border-radius: 50%;
-    padding: 15px 20px;
     background-color: var(--Dark-Blue);
     color: var(--Light-Grey);
     cursor: pointer;
+
+    /* This will Centralize the content */
+    width: 50px;
+    height: 50px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
 }
 
 .selected {  /* Added */
