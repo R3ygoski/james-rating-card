@@ -7,6 +7,7 @@
     --Very-Dark-Blue: hsl(216, 12%, 8%);
 
     --Background-Color: hsl(215, 22%, 15%);
+    --Tomato-Red: hsl(0, 100%, 63%);
 }
 
 body{
@@ -58,12 +59,8 @@ p{
     display: flex;
     text-align: center;
     justify-content: center;
-}
-
-.star-rating > *{
-    padding: 20px;
-    margin-right: 25px;
-    margin-left: 5px;
+    width: 100%;
+    gap: 24px;
 }
 
 .star-rating-btn {  /* Added */
@@ -71,6 +68,7 @@ p{
     padding: 15px 20px;
     background-color: var(--Dark-Blue);
     color: var(--Light-Grey);
+    cursor: pointer;
 }
 
 .selected {  /* Added */
@@ -140,7 +138,7 @@ p{
 }
 
 #error-choosing{  /* Added */
-    color: var(--Orange);
+    color: var(--Tomato-Red);
     font-size: 15px;
     display: none;
     margin: -2px 0;
